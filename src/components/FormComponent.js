@@ -4,7 +4,7 @@ import { Form, Col } from 'react-bootstrap';
 const FormComponent = ({ choosenPicture, drop, imgUrl, handlePicture }) => {
   
   return (
-    <Form.Group as={Col} md="6" className="bg-dark-subtle rounded-5 border border-secondary m-5 shadow-lg">
+    <Form.Group as={Col} md="5" className="bg-dark-subtle rounded-5 border border-secondary m-5 shadow-lg">
       <Form.Label htmlFor="image" className="d-block text-center">
         {!choosenPicture ? <img src={drop} alt='drop here' width="90%" />
           : <img src={imgUrl} alt="Preview" width="100%" />}
