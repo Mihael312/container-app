@@ -1,18 +1,19 @@
-import React from 'react';
-
-const CroppedImages = ({containerCode, croppedImages}) => {
-    return(
-        <>
-        {containerCode && croppedImages && <div className='d-flex gap-5 me-3'>
-          {croppedImages.map((img, index) => {
-              console.log(img)
-            return(
-                <img className={index == 0 && "border border-3 border-warning"} width={"20em"} key={index} src={img} alt={`Cropped Image ${index}`} />
-            )
-            })}
-        </div>}
-        </>
-    )
-}
+const CroppedImages = ({ croppedImages }) => {
+  return (
+    <div className='gap-5'>
+      {croppedImages && croppedImages.map((img, index) => {
+        return (
+          <img
+            className={`img-fluid`}
+            style={{ border: index === 0 && "5px solid rgb(100, 255, 95)"}}
+            key={index}
+            src={img}
+            alt={`Cropped ${index}`}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
 export default CroppedImages;
