@@ -9,7 +9,7 @@ const ResultComponent = ({ containerCode, searching }) => {
         <Alert variant="dark" className="rounded-5 p-3 shadow-lg ">
         <p className='fs-4 ms-3 text-dark'>Your container code:</p>
         <h1 className='ms-3'>{containerCode}</h1>
-      </Alert>}
+        </Alert>}
 
       {searching && 
       <div className='d-flex justify-content-center align-items-center'> 
